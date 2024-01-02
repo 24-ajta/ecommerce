@@ -1,4 +1,6 @@
 import CartIcon from "./IconComponent";// import smartphone3 from '../images/smartphone3.jpg';
+import { Link } from "react-router-dom";
+// import SignupComponent from "./SignupComponent";
 function NavigationComponent(){
 
     return (
@@ -8,6 +10,7 @@ function NavigationComponent(){
     <a className="navbar-brand ms-5" href="#">
         Eapp
       </a>
+      <Link to='/'>Home</Link>
       <a className="navbar-brand ms-5" href="#">
         Navbar
       </a>
@@ -98,9 +101,9 @@ function NavigationComponent(){
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="#">
-                  Sign Up
-                </a>
+              <Link className="dropdown-item" to="/signup">
+                    Sign up
+                  </Link>
               </li>
             </ul>
           </li>
@@ -109,7 +112,9 @@ function NavigationComponent(){
       </div>
     </div>
   </nav>
+ 
     </>
+
     )
 }
 

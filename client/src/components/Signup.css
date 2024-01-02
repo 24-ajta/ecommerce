@@ -1,0 +1,19 @@
+.maincontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* .formcontainer{
+    width: 50%;
+} */
+
+@media only screen and (max-width:900px) {
+    .maincontainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+}
